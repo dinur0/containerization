@@ -1,0 +1,392 @@
+PS C:\Users\USER> ssh d@192.168.0.77
+ssh: connect to host 192.168.0.77 port 22: Connection timed out
+PS C:\Users\USER> ssh d@192.168.0.81
+d@192.168.0.81's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+102 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Last login: Sat Jun 24 14:34:30 2023 from 192.168.0.17
+d@ubuntu222:~$ apt-get install lxc debootstrap bridge-utils lxc-templates
+E: Не удалось открыть файл блокировки /var/lib/dpkg/lock-frontend - open (13: Отказано в доступе)
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); у вас есть права суперпользователя?
+d@ubuntu222:~$ y
+y: команда не найдена
+d@ubuntu222:~$ sudo -s
+[sudo] пароль для d:
+root@ubuntu222:/home/d# apt-get install lxc debootstrap bridge-utils lxc-templates
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет bridge-utils самой новой версии (1.7-1ubuntu3).
+bridge-utils помечен как установленный вручную.
+Будут установлены следующие дополнительные пакеты:
+  arch-test cloud-image-utils fakechroot ibverbs-providers libdaxctl1 libdistro-info-perl libfakechroot libfuse2
+  libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libiscsi7 liblxc-common liblxc1 libndctl6 libpam-cgfs
+  libpmem1 libpmemobj1 librados2 librbd1 librdmacm1 liburing2 lxc-utils lxcfs mmdebstrap qemu-block-extra qemu-utils
+  uidmap
+Предлагаемые пакеты:
+  mtools squid-deb-proxy-client debian-archive-keyring qemu-user-static btrfs-tools lvm2 lxctl apt-transport-tor
+  binfmt-support genext2fs perl-doc proot qemu-user squashfs-tools-ng
+Следующие НОВЫЕ пакеты будут установлены:
+  arch-test cloud-image-utils debootstrap fakechroot ibverbs-providers libdaxctl1 libdistro-info-perl libfakechroot
+  libfuse2 libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libiscsi7 liblxc-common liblxc1 libndctl6
+  libpam-cgfs libpmem1 libpmemobj1 librados2 librbd1 librdmacm1 liburing2 lxc lxc-templates lxc-utils lxcfs mmdebstrap
+  qemu-block-extra qemu-utils uidmap
+Обновлено 0 пакетов, установлено 33 новых пакетов, для удаления отмечено 0 пакетов, и 102 пакетов не обновлено.
+Необходимо скачать 11,7 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 48,0 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 arch-test all 0.17-2 [12,5 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 libfakechroot amd64 2.20.1+ds-2 [47,4 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 fakechroot all 2.20.1+ds-2 [25,2 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libibverbs1 amd64 39.0-1 [69,3 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 ibverbs-providers amd64 39.0-1 [341 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libdaxctl1 amd64 72.1-1 [19,8 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libdistro-info-perl all 1.1build1 [5 644 B]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 libfuse2 amd64 2.9.9-5ubuntu3 [90,3 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgfxdr0 amd64 10.1-1ubuntu0.1 [22,2 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglusterfs0 amd64 10.1-1ubuntu0.1 [286 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgfrpc0 amd64 10.1-1ubuntu0.1 [47,1 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgfapi0 amd64 10.1-1ubuntu0.1 [77,3 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 librdmacm1 amd64 39.0-1 [71,2 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libiscsi7 amd64 1.19.0-3build2 [70,6 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 liblxc1 amd64 1:5.0.0~git2209-g5a7b9ce67-0ubuntu1 [356 kB]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 liblxc-common amd64 1:5.0.0~git2209-g5a7b9ce67-0ubuntu1 [460 kB]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libndctl6 amd64 72.1-1 [57,7 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 libpam-cgfs amd64 1:5.0.0~git2209-g5a7b9ce67-0ubuntu1 [25,5 kB]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libpmem1 amd64 1.11.1-3build1 [81,4 kB]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libpmemobj1 amd64 1.11.1-3build1 [124 kB]
+Пол:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 librados2 amd64 17.2.5-0ubuntu0.22.04.3 [3 573 kB]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 librbd1 amd64 17.2.5-0ubuntu0.22.04.3 [3 545 kB]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 liburing2 amd64 2.1-2build1 [10,3 kB]
+Пол:24 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 lxc-utils amd64 1:5.0.0~git2209-g5a7b9ce67-0ubuntu1 [385 kB]
+Пол:25 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 lxc all 1:5.0.0~git2209-g5a7b9ce67-0ubuntu1 [2 810 B]
+Пол:26 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 lxc-templates amd64 3.0.4-5 [84,7 kB]
+Пол:27 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 lxcfs amd64 5.0.0-0ubuntu2 [81,1 kB]
+Пол:28 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mmdebstrap all 0.8.4-1ubuntu0.1 [90,9 kB]
+Пол:29 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 qemu-utils amd64 1:6.2+dfsg-2ubuntu6.11 [1 525 kB]
+Пол:30 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 qemu-block-extra amd64 1:6.2+dfsg-2ubuntu6.11 [68,1 kB]
+Пол:31 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 uidmap amd64 1:4.8.1-2ubuntu2.1 [22,4 kB]
+Пол:32 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 cloud-image-utils all 0.32-22-g45fe84a5-0ubuntu1 [19,3 kB]
+Игн:33 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 debootstrap all 1.0.126+nmu1ubuntu0.4
+Ошб:33 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 debootstrap all 1.0.126+nmu1ubuntu0.4
+  404  Not Found [IP: 213.180.204.183 80]
+Получено 11,7 MB за 1с (13,2 MB/s)
+E: Не удалось получить http://ru.archive.ubuntu.com/ubuntu/pool/main/d/debootstrap/debootstrap_1.0.126%2bnmu1ubuntu0.4_all.deb  404  Not Found [IP: 213.180.204.183 80]
+E: Не удалось получить некоторые архивы; возможно, нужно запустить apt-get update или попытаться повторить запуск с ключом --fix-missing?
+root@ubuntu222:/home/d# apt-get install lxd-installer
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Следующие НОВЫЕ пакеты будут установлены:
+  lxd-installer
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 102 пакетов не обновлено.
+Необходимо скачать 3 108 B архивов.
+После данной операции объём занятого дискового пространства возрастёт на 22,5 kB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 lxd-installer all 1 [3 108 B]
+Получено 3 108 B за 0с (27,0 kB/s)
+Выбор ранее не выбранного пакета lxd-installer.
+(Чтение базы данных … на данный момент установлено 214811 файлов и каталогов.)
+Подготовка к распаковке …/lxd-installer_1_all.deb …
+Распаковывается lxd-installer (1) …
+Настраивается пакет lxd-installer (1) …
+Created symlink /etc/systemd/system/multi-user.target.wants/lxd-installer.socket → /lib/systemd/system/lxd-installer.socket.
+root@ubuntu222:/home/d# lxd init
+
+
+
+
+^Z
+[1]+  Остановлен    lxd init
+root@ubuntu222:/home/d# lxd init
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ConnectionResetError: [Errno 104] Connection reset by peer
+/usr/sbin/lxd: 6: exec: /snap/bin/lxd: not found
+root@ubuntu222:/home/d# lxd init
+внутренняя ошибка, сообщите: запуск "lxd" не удался: cannot find current revision for snap lxd: readlink /snap/lxd/current: no such file or directory
+root@ubuntu222:/home/d# lxd init
+Would you like to use LXD clustering? (yes/no) [default=no]:
+Do you want to configure a new storage pool? (yes/no) [default=yes]:
+Name of the new storage pool [default=default]:
+Name of the storage backend to use (btrfs, ceph, dir, lvm, zfs) [default=zfs]:
+Create a new ZFS pool? (yes/no) [default=yes]:
+Would you like to use an existing empty block device (e.g. a disk or partition)? (yes/no) [default=no]:
+Size in GiB of the new loop device (1GiB minimum) [default=5GiB]:
+Would you like to connect to a MAAS server? (yes/no) [default=no]:
+Would you like to create a new local network bridge? (yes/no) [default=yes]:
+What should the new bridge be called? [default=lxdbr0]:
+What IPv4 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]:
+What IPv6 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]:
+Would you like the LXD server to be available over the network? (yes/no) [default=no]:
+Would you like stale cached images to be updated automatically? (yes/no) [default=yes]:
+Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
+
+root@ubuntu222:/home/d#
+root@ubuntu222:/home/d#
+root@ubuntu222:/home/d# lxc storage list
+To start your first container, try: lxc launch ubuntu:22.04
+Or for a virtual machine: lxc launch ubuntu:22.04 --vm
+
++---------+--------+--------------------------------------------+-------------+---------+---------+
+|  NAME   | DRIVER |                   SOURCE                   | DESCRIPTION | USED BY |  STATE  |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+| default | zfs    | /var/snap/lxd/common/lxd/disks/default.img |             | 1       | CREATED |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+root@ubuntu222:/home/d# lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+Команда «lxc-create» не найдена, но может быть установлена с помощью:
+apt install lxc-utils
+root@ubuntu222:/home/d# apt-get install lxc debootstrap bridge-utils lxc-templates
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет bridge-utils самой новой версии (1.7-1ubuntu3).
+bridge-utils помечен как установленный вручную.
+Будут установлены следующие дополнительные пакеты:
+  arch-test cloud-image-utils fakechroot ibverbs-providers libdaxctl1 libdistro-info-perl libfakechroot libfuse2 libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libiscsi7 liblxc-common liblxc1 libndctl6 libpam-cgfs libpmem1 libpmemobj1 librados2 librbd1
+  librdmacm1 liburing2 lxc-utils lxcfs mmdebstrap qemu-block-extra qemu-utils uidmap
+Предлагаемые пакеты:
+  mtools squid-deb-proxy-client debian-archive-keyring qemu-user-static btrfs-tools lvm2 lxctl apt-transport-tor binfmt-support genext2fs perl-doc proot qemu-user squashfs-tools-ng
+Следующие НОВЫЕ пакеты будут установлены:
+  arch-test cloud-image-utils debootstrap fakechroot ibverbs-providers libdaxctl1 libdistro-info-perl libfakechroot libfuse2 libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libiscsi7 liblxc-common liblxc1 libndctl6 libpam-cgfs libpmem1 libpmemobj1 librados2
+  librbd1 librdmacm1 liburing2 lxc lxc-templates lxc-utils lxcfs mmdebstrap qemu-block-extra qemu-utils uidmap
+Обновлено 0 пакетов, установлено 33 новых пакетов, для удаления отмечено 0 пакетов, и 102 пакетов не обновлено.
+Необходимо скачать 40,7 kB/11,7 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 48,0 MB.
+Хотите продолжить? [Д/н] y
+Игн:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 debootstrap all 1.0.126+nmu1ubuntu0.4
+Ошб:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 debootstrap all 1.0.126+nmu1ubuntu0.4
+  404  Not Found [IP: 213.180.204.183 80]
+E: Не удалось получить http://ru.archive.ubuntu.com/ubuntu/pool/main/d/debootstrap/debootstrap_1.0.126%2bnmu1ubuntu0.4_all.deb  404  Not Found [IP: 213.180.204.183 80]
+E: Не удалось получить некоторые архивы; возможно, нужно запустить apt-get update или попытаться повторить запуск с ключом --fix-missing?
+root@ubuntu222:/home/d# apt-get install lxd-installer
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет lxd-installer самой новой версии (1).
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 102 пакетов не обновлено.
+root@ubuntu222:/home/d# lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+Команда «lxc-create» не найдена, но может быть установлена с помощью:
+apt install lxc-utils
+root@ubuntu222:/home/d# apt install lxc-utils
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Будут установлены следующие дополнительные пакеты:
+  libfuse2 liblxc-common liblxc1 libpam-cgfs lxcfs uidmap
+Предлагаемые пакеты:
+  btrfs-tools lvm2 lxc-templates lxctl
+Следующие НОВЫЕ пакеты будут установлены:
+  libfuse2 liblxc-common liblxc1 libpam-cgfs lxc-utils lxcfs uidmap
+Обновлено 0 пакетов, установлено 7 новых пакетов, для удаления отмечено 0 пакетов, и 102 пакетов не обновлено.
+Необходимо скачать 0 B/1 420 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 4 984 kB.
+Хотите продолжить? [Д/н]
+Выбор ранее не выбранного пакета libfuse2:amd64.
+(Чтение базы данных … на данный момент установлено 214820 файлов и каталогов.)
+Подготовка к распаковке …/0-libfuse2_2.9.9-5ubuntu3_amd64.deb …
+Распаковывается libfuse2:amd64 (2.9.9-5ubuntu3) …
+Выбор ранее не выбранного пакета liblxc1.
+Подготовка к распаковке …/1-liblxc1_1%3a5.0.0~git2209-g5a7b9ce67-0ubuntu1_amd64.deb …
+Распаковывается liblxc1 (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Выбор ранее не выбранного пакета liblxc-common.
+Подготовка к распаковке …/2-liblxc-common_1%3a5.0.0~git2209-g5a7b9ce67-0ubuntu1_amd64.deb …
+Распаковывается liblxc-common (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Выбор ранее не выбранного пакета libpam-cgfs.
+Подготовка к распаковке …/3-libpam-cgfs_1%3a5.0.0~git2209-g5a7b9ce67-0ubuntu1_amd64.deb …
+Распаковывается libpam-cgfs (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Выбор ранее не выбранного пакета lxc-utils.
+Подготовка к распаковке …/4-lxc-utils_1%3a5.0.0~git2209-g5a7b9ce67-0ubuntu1_amd64.deb …
+Распаковывается lxc-utils (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Выбор ранее не выбранного пакета lxcfs.
+Подготовка к распаковке …/5-lxcfs_5.0.0-0ubuntu2_amd64.deb …
+Распаковывается lxcfs (5.0.0-0ubuntu2) …
+Выбор ранее не выбранного пакета uidmap.
+Подготовка к распаковке …/6-uidmap_1%3a4.8.1-2ubuntu2.1_amd64.deb …
+Распаковывается uidmap (1:4.8.1-2ubuntu2.1) …
+Настраивается пакет libpam-cgfs (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Настраивается пакет uidmap (1:4.8.1-2ubuntu2.1) …
+Настраивается пакет libfuse2:amd64 (2.9.9-5ubuntu3) …
+Настраивается пакет lxcfs (5.0.0-0ubuntu2) …
+Created symlink /etc/systemd/system/multi-user.target.wants/lxcfs.service → /lib/systemd/system/lxcfs.service.
+Настраивается пакет liblxc1 (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Настраивается пакет lxc-utils (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Created symlink /etc/systemd/system/multi-user.target.wants/lxc-monitord.service → /lib/systemd/system/lxc-monitord.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/lxc-net.service → /lib/systemd/system/lxc-net.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/lxc.service → /lib/systemd/system/lxc.service.
+Setting up lxc dnsmasq configuration.
+Настраивается пакет liblxc-common (1:5.0.0~git2209-g5a7b9ce67-0ubuntu1) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+^[[A^[[Aroot@ubuntu222:/lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: MYlxc: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: MYlxc: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: MYlxc: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: MYlxc: tools/lxc_create.c: main: 317 Failed to create container MYlxc
+root@ubuntu222:/home/d# lxd init
+Would you like to use LXD clustering? (yes/no) [default=no]:
+Do you want to configure a new storage pool? (yes/no) [default=yes]:
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]:
+The requested storage pool "default" already exists. Please choose another name.
+Name of the new storage pool [default=default]: MYlxc
+Name of the storage backend to use (dir, lvm, zfs, btrfs, ceph) [default=zfs]: Mylxc
+Invalid input, try again.
+
+Name of the storage backend to use (dir, lvm, zfs, btrfs, ceph) [default=zfs]:
+Create a new ZFS pool? (yes/no) [default=yes]:
+Would you like to use an existing empty block device (e.g. a disk or partition)? (yes/no) [default=no]:
+Size in GiB of the new loop device (1GiB minimum) [default=5GiB]:
+Would you like to connect to a MAAS server? (yes/no) [default=no]:
+Would you like to create a new local network bridge? (yes/no) [default=yes]:
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]:
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]: lxdbr0
+The requested network bridge "lxdbr0" already exists. Please choose another name.
+What should the new bridge be called? [default=lxdbr0]: ^Z
+[2]+  Остановлен    lxd init
+root@ubuntu222:/home/d# lxc storage list
++---------+--------+--------------------------------------------+-------------+---------+---------+
+|  NAME   | DRIVER |                   SOURCE                   | DESCRIPTION | USED BY |  STATE  |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+| default | zfs    | /var/snap/lxd/common/lxd/disks/default.img |             | 1       | CREATED |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+root@ubuntu222:/home/d# lxc storage list
++---------+--------+--------------------------------------------+-------------+---------+---------+
+|  NAME   | DRIVER |                   SOURCE                   | DESCRIPTION | USED BY |  STATE  |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+| default | zfs    | /var/snap/lxd/common/lxd/disks/default.img |             | 1       | CREATED |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+root@ubuntu222:/home/d# nano /var/lib/lxc/MYlxc/config-открываем
+root@ubuntu222:/home/d# cd /var/lib/lxc/MYlxc/config-открываем
+bash: cd: /var/lib/lxc/MYlxc/config-открываем: Нет такого файла или каталога
+root@ubuntu222:/home/d# cd var/lib/lxc/MYlxc/config-открываем
+bash: cd: var/lib/lxc/MYlxc/config-открываем: Нет такого файла или каталога
+root@ubuntu222:/home/d# cd var/lib/lxc/MYlxc
+bash: cd: var/lib/lxc/MYlxc: Нет такого файла или каталога
+root@ubuntu222:/home/d# cd ..
+root@ubuntu222:/home# cd ..
+root@ubuntu222:/#
+root@ubuntu222:/# cd ..
+root@ubuntu222:/# cd var/lib/lxc/MYlxc
+bash: cd: var/lib/lxc/MYlxc: Нет такого файла или каталога
+root@ubuntu222:/# cd var/
+root@ubuntu222:/var# cd var/lib/lxc/MYlxc/
+bash: cd: var/lib/lxc/MYlxc/: Нет такого файла или каталога
+root@ubuntu222:/var# cd ..
+root@ubuntu222:/# cd home/d
+root@ubuntu222:/home/d# nano /var/lib/lxc/MYlxc/config-открываем
+root@ubuntu222:/home/d# nano /var/lib/lxc/MYlxc/config
+root@ubuntu222:/home/d# root@ubuntu222:/home/d# rm -r /usr/share/doc/lxc/example/lxc-veth.conf
+rm: невозможно удалить '/usr/share/doc/lxc/example/lxc-veth.conf': Нет такого файла или каталога
+root@ubuntu222:/home/d# rm -r /usr/share/doc/lxc/example/
+rm: невозможно удалить '/usr/share/doc/lxc/example/': Нет такого файла или каталога
+root@ubuntu222:/home/d# rm -r /usr/share/doc/lxc/example
+rm: невозможно удалить '/usr/share/doc/lxc/example': Нет такого файла или каталога
+root@ubuntu222:/home/d# lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: MYlxc: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: MYlxc: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: MYlxc: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: MYlxc: tools/lxc_create.c: main: 317 Failed to create container MYlxc
+root@ubuntu222:/home/d# lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: MYlxc: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: MYlxc: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: MYlxc: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: MYlxc: tools/lxc_create.c: main: 317 Failed to create container MYlxc
+root@ubuntu222:/home/d# lxc-create -n test01 -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: test01: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: test01: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: test01: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: test01: tools/lxc_create.c: main: 317 Failed to create container test01
+root@ubuntu222:/home/d# docker system prune
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+3a772269e8c6759ad84a854e70ad960ef17f4f78fcdcb883c10fa2a14f006a9b
+63690ec6eea5b9c73b5859b177e568a0f8cf063a59641739ab58ddc1d6ab11b3
+
+Deleted Networks:
+wordpress_default
+
+Total reclaimed space: 0B
+root@ubuntu222:/home/d# lxc-create -n test01 -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: test01: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: test01: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: test01: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: test01: tools/lxc_create.c: main: 317 Failed to create container test01
+root@ubuntu222:/home/d# lxc-create -n MYlxc -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: MYlxc: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: MYlxc: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: MYlxc: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: MYlxc: tools/lxc_create.c: main: 317 Failed to create container MYlxc
+root@ubuntu222:/home/d#  lxc storage list
++---------+--------+--------------------------------------------+-------------+---------+---------+
+|  NAME   | DRIVER |                   SOURCE                   | DESCRIPTION | USED BY |  STATE  |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+| default | zfs    | /var/snap/lxd/common/lxd/disks/default.img |             | 1       | CREATED |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+root@ubuntu222:/home/d# docker ps -qa
+321fbe68d2ad
+93013d6cd22d
+root@ubuntu222:/home/d#  docker rm $
+Error: No such container: $
+root@ubuntu222:/home/d# lxc storage list
++---------+--------+--------------------------------------------+-------------+---------+---------+
+|  NAME   | DRIVER |                   SOURCE                   | DESCRIPTION | USED BY |  STATE  |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+| default | zfs    | /var/snap/lxd/common/lxd/disks/default.img |             | 1       | CREATED |
++---------+--------+--------------------------------------------+-------------+---------+---------+
+root@ubuntu222:/home/d# xc delete default
+Команда «xc» не найдена, но может быть установлена с помощью:
+apt install iraf-dev
+root@ubuntu222:/home/d# lxc delete default
+Error: Failed checking instance exists "local:default": Instance not found
+root@ubuntu222:/home/d# lxc-create -n test01 -t ubuntu -f /usr/share/doc/lxc/example/lxc-veth.conf
+lxc-create: test01: parse.c: lxc_file_for_each_line_mmap: 78 No such file or directory - Failed to open file "/usr/share/doc/lxc/example/lxc-veth.conf"
+lxc-create: test01: utils.c: get_template_path: 901 No such file or directory - bad template: ubuntu
+lxc-create: test01: lxccontainer.c: __lxcapi_create: 1798 Template "ubuntu" not found
+lxc-create: test01: tools/lxc_create.c: main: 317 Failed to create container test01
+root@ubuntu222:/home/d#
