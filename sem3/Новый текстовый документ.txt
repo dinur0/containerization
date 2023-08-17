@@ -1,0 +1,525 @@
+d@ubuntu222:~$ sudo apt update
+[sudo] пароль для d:
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy/main Translation-ru [344 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy/restricted Translation-ru [896 B]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy/universe Translation-ru [1 369 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy/multiverse Translation-ru [68,5 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [889 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [471 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [214 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [100 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main DEP-11 48x48 Icons [36,1 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main DEP-11 64x64 Icons [55,1 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [15,6 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [710 kB]
+Пол:16 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [30,3 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [113 kB]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [536 B]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [967 kB]
+Пол:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [648 kB]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [210 kB]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [287 kB]
+Пол:24 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe DEP-11 48x48 Icons [192 kB]
+Пол:25 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe DEP-11 64x64 Icons [295 kB]
+Пол:26 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [21,5 kB]
+Пол:27 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse i386 Packages [3 888 B]
+Пол:28 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41,6 kB]
+Пол:29 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [9 768 B]
+Пол:30 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Пол:31 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [476 B]
+Пол:32 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [40,8 kB]
+Пол:33 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [33,6 kB]
+Пол:34 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [4 880 B]
+Пол:35 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main DEP-11 48x48 Icons [16,1 kB]
+Пол:36 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main DEP-11 64x64 Icons [21,3 kB]
+Пол:37 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Пол:38 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [22,3 kB]
+Пол:39 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [12,8 kB]
+Пол:40 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [15,4 kB]
+Пол:41 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [15,6 kB]
+Пол:42 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 48x48 Icons [13,1 kB]
+Пол:43 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [22,0 kB]
+Пол:44 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [576 B]
+Пол:45 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [305 kB]
+Пол:46 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [679 kB]
+Пол:47 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [155 kB]
+Пол:48 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [42,8 kB]
+Пол:49 http://security.ubuntu.com/ubuntu jammy-security/main DEP-11 48x48 Icons [16,9 kB]
+Пол:50 http://security.ubuntu.com/ubuntu jammy-security/main DEP-11 64x64 Icons [26,5 kB]
+Пол:51 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,2 kB]
+Пол:52 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [694 kB]
+Пол:53 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [30,0 kB]
+Пол:54 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [110 kB]
+Пол:55 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [536 B]
+Пол:56 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [770 kB]
+Пол:57 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [553 kB]
+Пол:58 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [140 kB]
+Пол:59 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [39,9 kB]
+Пол:60 http://security.ubuntu.com/ubuntu jammy-security/universe DEP-11 48x48 Icons [21,4 kB]
+Пол:61 http://security.ubuntu.com/ubuntu jammy-security/universe DEP-11 64x64 Icons [33,9 kB]
+Пол:62 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,4 kB]
+Пол:63 http://security.ubuntu.com/ubuntu jammy-security/multiverse i386 Packages [1 032 B]
+Пол:64 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]
+Пол:65 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7 060 B]
+Пол:66 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Получено 11,3 MB за 6с (1 925 kB/s)
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 300 пакетов. Запустите «apt list --upgradable» для их показа.
+d@ubuntu222:~$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет ca-certificates самой новой версии (20230311ubuntu0.22.04.1).
+ca-certificates помечен как установленный вручную.
+Будут установлены следующие дополнительные пакеты:
+  libcurl4 python3-software-properties software-properties-gtk
+Следующие НОВЫЕ пакеты будут установлены:
+  apt-transport-https
+Следующие пакеты будут обновлены:
+  curl libcurl4 python3-software-properties software-properties-common software-properties-gtk
+Обновлено 5 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 295 пакетов не обновлено.
+Необходимо скачать 600 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 171 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 apt-transport-https all 2.4.10 [1 510 B]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.13 [194 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.13 [290 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 software-properties-common all 0.99.22.7 [14,1 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 software-properties-gtk all 0.99.22.7 [71,3 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-software-properties all 0.99.22.7 [28,8 kB]
+Получено 600 kB за 0с (2 457 kB/s)
+Выбор ранее не выбранного пакета apt-transport-https.
+(Чтение базы данных … на данный момент установлено 215095 файлов и каталогов.)
+Подготовка к распаковке …/0-apt-transport-https_2.4.10_all.deb …
+Распаковывается apt-transport-https (2.4.10) …
+Подготовка к распаковке …/1-curl_7.81.0-1ubuntu1.13_amd64.deb …
+Распаковывается curl (7.81.0-1ubuntu1.13) на замену (7.81.0-1ubuntu1.10) …
+Подготовка к распаковке …/2-libcurl4_7.81.0-1ubuntu1.13_amd64.deb …
+Распаковывается libcurl4:amd64 (7.81.0-1ubuntu1.13) на замену (7.81.0-1ubuntu1.10) …
+Подготовка к распаковке …/3-software-properties-common_0.99.22.7_all.deb …
+Распаковывается software-properties-common (0.99.22.7) на замену (0.99.22.5) …
+Подготовка к распаковке …/4-software-properties-gtk_0.99.22.7_all.deb …
+Распаковывается software-properties-gtk (0.99.22.7) на замену (0.99.22.5) …
+Подготовка к распаковке …/5-python3-software-properties_0.99.22.7_all.deb …
+Распаковывается python3-software-properties (0.99.22.7) на замену (0.99.22.5) …
+Настраивается пакет apt-transport-https (2.4.10) …
+Настраивается пакет python3-software-properties (0.99.22.7) …
+Настраивается пакет libcurl4:amd64 (7.81.0-1ubuntu1.13) …
+Настраивается пакет curl (7.81.0-1ubuntu1.13) …
+Настраивается пакет software-properties-common (0.99.22.7) …
+Настраивается пакет software-properties-gtk (0.99.22.7) …
+Обрабатываются триггеры для dbus (1.12.20-2ubuntu4.1) …
+Обрабатываются триггеры для shared-mime-info (2.1-2) …
+Обрабатываются триггеры для mailcap (3.70+nmu1ubuntu1) …
+Обрабатываются триггеры для desktop-file-utils (0.26-1ubuntu3) …
+Обрабатываются триггеры для hicolor-icon-theme (0.17-2) …
+Обрабатываются триггеры для gnome-menus (3.36.0-1ubuntu3) …
+Обрабатываются триггеры для libglib2.0-0:amd64 (2.72.4-0ubuntu2.2) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+d@ubuntu222:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+d@ubuntu222:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+Файл '/usr/share/keyrings/docker-archive-keyring.gpg' существует. Записать поверх? (y/N) n
+Введите новое имя файла:
+[1]+  Остановлен    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+d@ubuntu222:~$ echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+d@ubuntu222:~$ echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu jammy stable
+d@ubuntu222:~$  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+^[[B^[[B
+^Z
+[2]+  Остановлен    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+d@ubuntu222:~$ sudo apt update
+E: Некорректная строка 1 в списке источников /etc/apt/sources.list.d/docker.list (тип)
+E: Не удалось прочитать перечень источников.
+d@ubuntu222:~$ sudo apt update
+E: Некорректная строка 1 в списке источников /etc/apt/sources.list.d/docker.list (тип)
+E: Не удалось прочитать перечень источников.
+d@ubuntu222:~$ sudo apt install docker-ce
+E: Некорректная строка 1 в списке источников /etc/apt/sources.list.d/docker.list (тип)
+E: Не удалось прочитать перечень источников.
+d@ubuntu222:~$ echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+d@ubuntu222:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Пол:4 https://download.docker.com/linux/ubuntu jammy InRelease [48,9 kB]
+Сущ:5 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Пол:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [21,4 kB]
+Получено 70,3 kB за 1с (118 kB/s)
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 295 пакетов. Запустите «apt list --upgradable» для их показа.
+N: Пропускается получение настроенного файла «stable/binary-i386/Packages», так как репозиторий «https://download.docker.com/linux/ubuntu jammy InRelease» не поддерживает архитектуру «i386»
+d@ubuntu222:~$ sudo apt install docker-ce
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  ubuntu-fan
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  containerd.io docker-buildx-plugin docker-ce-cli docker-ce-rootless-extras docker-compose-plugin libslirp0
+  slirp4netns
+Предлагаемые пакеты:
+  aufs-tools cgroupfs-mount | cgroup-lite
+Следующие пакеты будут УДАЛЕНЫ:
+  containerd docker.io runc
+Следующие НОВЫЕ пакеты будут установлены:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin libslirp0
+  slirp4netns
+Обновлено 0 пакетов, установлено 8 новых пакетов, для удаления отмечено 3 пакетов, и 292 пакетов не обновлено.
+Необходимо скачать 114 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 129 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61,5 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28,2 kB]
+Пол:3 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.6.22-1 [28,3 MB]
+Пол:4 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.11.2-1~ubuntu.22.04~jammy [28,2 MB]
+Пол:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:24.0.5-1~ubuntu.22.04~jammy [13,3 MB]
+Пол:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:24.0.5-1~ubuntu.22.04~jammy [22,9 MB]
+Пол:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:24.0.5-1~ubuntu.22.04~jammy [9 032 kB]
+Пол:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.20.2-1~ubuntu.22.04~jammy [11,9 MB]
+Получено 114 MB за 6с (18,5 MB/s)
+(Чтение базы данных … на данный момент установлено 215099 файлов и каталогов.)
+Удаляется docker.io (20.10.21-0ubuntu1~22.04.3) …
+'/usr/share/docker.io/contrib/nuke-graph-directory.sh' -> '/var/lib/docker/nuke-graph-directory.sh'
+Warning: Stopping docker.service, but it can still be activated by:
+  docker.socket
+Удаляется containerd (1.6.12-0ubuntu1~22.04.1) …
+Удаляется runc (1.1.4-0ubuntu1~22.04.3) …
+Выбор ранее не выбранного пакета containerd.io.
+(Чтение базы данных … на данный момент установлено 214836 файлов и каталогов.)
+Подготовка к распаковке …/0-containerd.io_1.6.22-1_amd64.deb …
+Распаковывается containerd.io (1.6.22-1) …
+Выбор ранее не выбранного пакета docker-buildx-plugin.
+Подготовка к распаковке …/1-docker-buildx-plugin_0.11.2-1~ubuntu.22.04~jammy_amd64.deb …
+Распаковывается docker-buildx-plugin (0.11.2-1~ubuntu.22.04~jammy) …
+Выбор ранее не выбранного пакета docker-ce-cli.
+Подготовка к распаковке …/2-docker-ce-cli_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb …
+Распаковывается docker-ce-cli (5:24.0.5-1~ubuntu.22.04~jammy) …
+Выбор ранее не выбранного пакета docker-ce.
+Подготовка к распаковке …/3-docker-ce_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb …
+Распаковывается docker-ce (5:24.0.5-1~ubuntu.22.04~jammy) …
+Выбор ранее не выбранного пакета docker-ce-rootless-extras.
+Подготовка к распаковке …/4-docker-ce-rootless-extras_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb …
+Распаковывается docker-ce-rootless-extras (5:24.0.5-1~ubuntu.22.04~jammy) …
+Выбор ранее не выбранного пакета docker-compose-plugin.
+Подготовка к распаковке …/5-docker-compose-plugin_2.20.2-1~ubuntu.22.04~jammy_amd64.deb …
+Распаковывается docker-compose-plugin (2.20.2-1~ubuntu.22.04~jammy) …
+Выбор ранее не выбранного пакета libslirp0:amd64.
+Подготовка к распаковке …/6-libslirp0_4.6.1-1build1_amd64.deb …
+Распаковывается libslirp0:amd64 (4.6.1-1build1) …
+Выбор ранее не выбранного пакета slirp4netns.
+Подготовка к распаковке …/7-slirp4netns_1.0.1-2_amd64.deb …
+Распаковывается slirp4netns (1.0.1-2) …
+Настраивается пакет docker-buildx-plugin (0.11.2-1~ubuntu.22.04~jammy) …
+Настраивается пакет containerd.io (1.6.22-1) …
+Настраивается пакет docker-compose-plugin (2.20.2-1~ubuntu.22.04~jammy) …
+Настраивается пакет docker-ce-cli (5:24.0.5-1~ubuntu.22.04~jammy) …
+Настраивается пакет libslirp0:amd64 (4.6.1-1build1) …
+Настраивается пакет docker-ce-rootless-extras (5:24.0.5-1~ubuntu.22.04~jammy) …
+Настраивается пакет slirp4netns (1.0.1-2) …
+Настраивается пакет docker-ce (5:24.0.5-1~ubuntu.22.04~jammy) …
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 142.
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+d@ubuntu222:~$ sudo usermod -aG docker $DINDIN
+Использование: usermod [параметры] ПОЛЬЗОВАТЕЛЬ
+
+Параметры:
+  -b, --badnames                allow bad names
+  -c, --comment КОММЕНТАРИЙ     новое значение поля GECOS
+  -d, --home ДОМ_КАТ            новый домашний каталог учётной записи
+  -e, --expiredate ДАТА_УСТ     установить дату окончания действия
+                                учётной записи в ДАТА_УСТ
+  -f, --inactive НЕАКТИВНОСТЬ   установить период неактивности пароля после
+                                устаревания учётной записи равным НЕАКТИВНОСТЬ
+  -g, --gid ГРУППА              принудительно назначить первичную ГРУППУ
+  -G, --groups ГРУППЫ           список дополнительных ГРУПП
+  -a, --append                  добавить пользователя в дополнительные
+                                ГРУППЫ, указанные в параметре -G не удаляя
+                                пользователя из других групп
+  -h, --help                    показать данное сообщение и закончить работу
+  -l, --login НОВОЕ_ИМЯ         новое значение имени учётной записи
+  -L, --lock                    заблокировать учётную запись
+  -m, --move-home               переместить содержимое домашнего каталога в
+                                новое место (использовать только вместе с -d)
+  -o, --non-unique              разрешить создание учётной записи с уже
+                                имеющимся (не уникальным) UID
+  -p, --password ПАРОЛЬ         задать новый шифрованный пароль для
+                                учётной записи
+  -R, --root КАТ_CHROOT         каталог, в который выполняется chroot
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell ОБОЛОЧКА          новая регистрационная оболочка для учётной
+                                записи
+  -u, --uid UID                 новый UID для учётной записи
+  -U, --unlock                  разблокировать учётную запись
+  -v, --add-subuids ПЕРВ-ПОСЛ   добавить диапазон подчинённых uid
+  -V, --del-subuids ПЕРВ-ПОСЛ   удалить диапазон подчинённых uid
+  -w, --add-subgids ПЕРВ-ПОСЛ   добавить диапазон подчинённых gid
+  -W, --del-subgids ПЕРВ-ПОСЛ   удалить диапазон подчинённых gid
+  -Z, --selinux-user SEUSER     новое пользовательское сопоставление
+                                SELinux для учётной записи
+
+d@ubuntu222:~$ sudo usermod -aG docker $USER
+d@ubuntu222:~$ newgrp docker
+d@ubuntu222:~$ docker --version
+Docker version 24.0.5, build ced0996
+d@ubuntu222:~$ docker run docker/whalesay cowsay Hello, Docker!
+Unable to find image 'docker/whalesay:latest' locally
+latest: Pulling from docker/whalesay
+Image docker.io/docker/whalesay:latest uses outdated schema1 manifest format. Please upgrade to a schema2 image for better future compatibility. More information at https://docs.docker.com/registry/spec/deprecated-schema-v1/
+e190868d63f8: Pull complete
+909cd34c6fd7: Pull complete
+0b9bfabab7c1: Pull complete
+a3ed95caeb02: Pull complete
+00bf65475aba: Pull complete
+c57b6bcc83e3: Pull complete
+8978f6879e2f: Pull complete
+8eed3712d2cf: Pull complete
+Digest: sha256:178598e51a26abbc958b8a2e48825c90bc22e641de3d31e18aaf55f3258ba93b
+Status: Downloaded newer image for docker/whalesay:latest
+ ________________
+< Hello, Docker! >
+ ----------------
+    \
+     \
+      \
+                    ##        .
+              ## ## ##       ==
+           ## ## ## ##      ===
+       /""""""""""""""""___/ ===
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+       \______ o          __/
+        \    \        __/
+          \____\______/
+d@ubuntu222:~$ docker run docker/whalesay cowsay -f elephant "Hello, Docker!"
+ ________________
+< Hello, Docker! >
+ ----------------
+ \     /\  ___  /\
+  \   // \/   \/ \\
+     ((    O O    ))
+      \\ /     \ //
+       \/  | |  \/
+        |  | |  |
+        |  | |  |
+        |   o   |
+        | |   | |
+        |m|   |m|
+d@ubuntu222:~$ docker run
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Create and run a new container from an image
+d@ubuntu222:~$ docker start
+"docker start" requires at least 1 argument.
+See 'docker start --help'.
+
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+d@ubuntu222:~$ docker stop
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+d@ubuntu222:~$ docker run -it -h GB --name gb-test ubuntu:22.10
+Unable to find image 'ubuntu:22.10' locally
+22.10: Pulling from library/ubuntu
+3ad6ea492c35: Pull complete
+Digest: sha256:e322f4808315c387868a9135beeb11435b5b83130a8599fd7d0014452c34f489
+Status: Downloaded newer image for ubuntu:22.10
+root@GB:/# ls -l
+total 48
+lrwxrwxrwx   1 root root    7 Jun 24 02:02 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Oct 17  2022 boot
+drwxr-xr-x   5 root root  360 Aug 17 08:56 dev
+drwxr-xr-x   1 root root 4096 Aug 17 08:56 etc
+drwxr-xr-x   2 root root 4096 Oct 17  2022 home
+lrwxrwxrwx   1 root root    7 Jun 24 02:02 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Jun 24 02:02 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Jun 24 02:02 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Jun 24 02:02 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 media
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 mnt
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 opt
+dr-xr-xr-x 306 root root    0 Aug 17 08:56 proc
+drwx------   2 root root 4096 Jun 24 02:05 root
+drwxr-xr-x   5 root root 4096 Jun 24 02:05 run
+lrwxrwxrwx   1 root root    8 Jun 24 02:02 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 srv
+dr-xr-xr-x  13 root root    0 Aug 17 08:56 sys
+drwxrwxrwt   2 root root 4096 Jun 24 02:05 tmp
+drwxr-xr-x  14 root root 4096 Jun 24 02:02 usr
+drwxr-xr-x  11 root root 4096 Jun 24 02:05 var
+root@GB:/# mkdir /example
+root@GB:/# ls -l
+total 52
+lrwxrwxrwx   1 root root    7 Jun 24 02:02 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Oct 17  2022 boot
+drwxr-xr-x   5 root root  360 Aug 17 08:56 dev
+drwxr-xr-x   1 root root 4096 Aug 17 08:56 etc
+drwxr-xr-x   2 root root 4096 Aug 17 08:56 example
+drwxr-xr-x   2 root root 4096 Oct 17  2022 home
+lrwxrwxrwx   1 root root    7 Jun 24 02:02 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Jun 24 02:02 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Jun 24 02:02 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Jun 24 02:02 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 media
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 mnt
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 opt
+dr-xr-xr-x 306 root root    0 Aug 17 08:56 proc
+drwx------   2 root root 4096 Jun 24 02:05 root
+drwxr-xr-x   5 root root 4096 Jun 24 02:05 run
+lrwxrwxrwx   1 root root    8 Jun 24 02:02 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jun 24 02:02 srv
+dr-xr-xr-x  13 root root    0 Aug 17 08:56 sys
+drwxrwxrwt   2 root root 4096 Jun 24 02:05 tmp
+drwxr-xr-x  14 root root 4096 Jun 24 02:02 usr
+drwxr-xr-x  11 root root 4096 Jun 24 02:05 var
+root@GB:/# touch /example/passwords.txt
+root@GB:/# echo "123test" >> /example/passwords.txt
+root@GB:/# docker stop gb-test
+bash: docker: command not found
+root@GB:/# docker stop gb-test
+bash: docker: command not found
+root@GB:/# docker start gb-test
+bash: docker: command not found
+root@GB:/# exit
+exit
+d@ubuntu222:~$ docker stop gb-test
+gb-test
+d@ubuntu222:~$ docker start gb-test
+gb-test
+d@ubuntu222:~$ docker exec -it gb-test bash
+root@GB:/# cat /example/passwords.txt
+123test
+root@GB:/# docker stop gb-test
+bash: docker: command not found
+root@GB:/# exit
+exit
+d@ubuntu222:~$ docker stop gb-test
+
+^Z
+[1]+  Остановлен    docker stop gb-test
+d@ubuntu222:~$ docker stop gb-test
+docker rm gb-test
+^Z
+[2]+  Остановлен    docker stop gb-test
+d@ubuntu222:~$ docker rm gb-test
+Error response from daemon: You cannot remove a running container 2493b0f3c074fb4f2d0e4f8a6ff2002cdbfb3dbec05886b4219e5bd58f803df4. Stop the container before attempting removal or force remove
+d@ubuntu222:~$ docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+d@ubuntu222:~$ client_loop: send disconnect: Connection reset
+PS C:\Users\USER> ssh d@192.168.0.81
+d@192.168.0.81's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+102 обновления может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Включите ESM Apps для получения дополнительных будущих обновлений безопасности.
+Смотрите https://ubuntu.com/esm или выполните: sudo pro status
+
+Last login: Thu Aug 17 11:45:15 2023 from 192.168.0.17
+d@ubuntu222:~$ docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+d@ubuntu222:~$ sudo -s
+[sudo] пароль для d:
+root@ubuntu222:/home/d# docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+root@ubuntu222:/home/d#  docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+root@ubuntu222:/home/d# docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+root@ubuntu222:/home/d# docker start gb-test
+gb-test
+root@ubuntu222:/home/d# docker exec -it gb-test bash
+root@GB:/# docker stop gb-test
+bash: docker: command not found
+root@GB:/# exit
+exit
+root@ubuntu222:/home/d# docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+root@ubuntu222:/home/d# docker rm gb-test
+Error response from daemon: You cannot remove a running container 2493b0f3c074fb4f2d0e4f8a6ff2002cdbfb3dbec05886b4219e5bd58f803df4. Stop the container before attempting removal or force remove
+root@ubuntu222:/home/d# docker ps -a
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS                      PORTS                 NAMES
+2493b0f3c074   ubuntu:22.10                 "/bin/bash"              12 minutes ago   Up 7 minutes                                      gb-test
+d593b3f8c248   docker/whalesay              "cowsay -f elephant …"   14 minutes ago   Exited (0) 14 minutes ago                         sweet_burnell
+37324ccba621   docker/whalesay              "cowsay Hello, Docke…"   14 minutes ago   Exited (0) 14 minutes ago                         fervent_hamilton
+321fbe68d2ad   wordpress:5.1.1-fpm-alpine   "docker-entrypoint.s…"   7 weeks ago      Up 24 minutes               9000/tcp              wordpress
+93013d6cd22d   mysql:8.0                    "docker-entrypoint.s…"   7 weeks ago      Up 24 minutes               3306/tcp, 33060/tcp   db
+root@ubuntu222:/home/d# docker stop gb-test
+Error response from daemon: cannot stop container: gb-test: permission denied
+root@ubuntu222:/home/d# docker stop 2493b0f3c074
+Error response from daemon: cannot stop container: 2493b0f3c074: permission denied
+root@ubuntu222:/home/d#  docker kill
+"docker kill" requires at least 1 argument.
+See 'docker kill --help'.
+
+Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...]
+
+Kill one or more running containers
+root@ubuntu222:/home/d# docker kill 2493b0f3c074
+Error response from daemon: Cannot kill container: 2493b0f3c074: permission denied
+root@ubuntu222:/home/d# docker start gb-test
+gb-test
+root@ubuntu222:/home/d# docker start gb-test
+gb-test
+root@ubuntu222:/home/d# mkdir /test/folder
+mkdir: невозможно создать каталог «/test/folder»: Нет такого файла или каталога
+root@ubuntu222:/home/d# mkdir /test
+root@ubuntu222:/home/d# mkdir /test/folder
+root@ubuntu222:/home/d# docker run -it -h GB --name gb-test -v /test/folder:/otherway ubuntu:22.10
+docker: Error response from daemon: Conflict. The container name "/gb-test" is already in use by container "2493b0f3c074fb4f2d0e4f8a6ff2002cdbfb3dbec05886b4219e5bd58f803df4". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu222:/home/d# docker start gb-test
+gb-test
+root@ubuntu222:/home/d# docker run -it -h GB --name gb-test ubuntu:22.10
+docker: Error response from daemon: Conflict. The container name "/gb-test" is already in use by container "2493b0f3c074fb4f2d0e4f8a6ff2002cdbfb3dbec05886b4219e5bd58f803df4". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu222:/home/d# exit
+exit
+d@ubuntu222:~$ docker stop gb-test
+^Z
+[1]+  Остановлен    docker stop gb-test
+d@ubuntu222:~$ docker start gb-test
+gb-test
+d@ubuntu222:~$ docker exec -it gb-test bash
+root@GB:/# docker run -it -h GB --name gb-test ubuntu:22.10
+bash: docker: command not found
+root@GB:/# mkdir /test/folder
+mkdir: cannot create directory '/test/folder': No such file or directory
+root@GB:/# mkdir /test
+root@GB:/# mkdir /test/folder
+root@GB:/# docker run -it -h GB --name gb-test -v /test/folder:/otherway ubuntu:22.10
+bash: docker: command not found
+root@GB:/# docker run -it -h GB --name gb-test -v /test/folder:/otherway ubuntu:22.10
+bash: docker: command not found
+root@GB:/#
