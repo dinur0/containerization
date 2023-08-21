@@ -1,0 +1,89 @@
+d@ubuntu222:~$ sudo -s
+[sudo] пароль для d:
+root@ubuntu222:/home/d# mkdir my_docker
+root@ubuntu222:/home/d# cd my_docker
+root@ubuntu222:/home/d/my_docker# nano Dockerfile
+root@ubuntu222:/home/d/my_docker# nano app.py
+root@ubuntu222:/home/d/my_docker# root@ubuntu222:/home/d/my_docker# ls
+app.py  Dockerfile
+root@ubuntu222:/home/d/my_docker# nano Dockerfile
+d@ubuntu222:~/my_docker$ nano app.py
+d@ubuntu222:~/my_docker$ d@ubuntu222:~/my_docker$ nano Dockerfile
+d@ubuntu222:~/my_docker$ d@ubuntu222:~/my_docker$
+d@ubuntu222:~/my_docker$ sudo -s
+[sudo] пароль для d:
+root@ubuntu222:/home/d/my_docker# nano Dockerfile
+root@ubuntu222:/home/d/my_docker# root@ubuntu222:/home/d/my_docker# nano Dockerfile
+root@ubuntu222:/home/d/my_docker# root@ubuntu222:/home/d/my_docker# docker build -t my-python-app .
+[+] Building 16.1s (7/9)                                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 162B                                                                               0.0s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                   2.6s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 288B                                                                                  0.0s
+ => [1/5] FROM docker.io/library/ubuntu:latest@sha256:ec050c32e4a6085b423d36ecd025c0d3ff00c38ab93a3d71a460ff1c44f  3.1s
+ => => resolve docker.io/library/ubuntu:latest@sha256:ec050c32e4a6085b423d36ecd025c0d3ff00c38ab93a3d71a460ff1c44f  0.0s
+ => => sha256:ec050c32e4a6085b423d36ecd025c0d3ff00c38ab93a3d71a460ff1c44fa6d77 1.13kB / 1.13kB                     0.0s
+ => => sha256:56887c5194fddd8db7e36ced1c16b3569d89f74c801dc8a5adbf48236fb34564 424B / 424B                         0.0s
+ => => sha256:01f29b872827fa6f9aed0ea0b2ede53aea4ad9d66c7920e81a8db6d1fd9ab7f9 2.30kB / 2.30kB                     0.0s
+ => => sha256:b237fe92c4173e4dfb3ba82e76e5fed4b16186a6161e07af15814cb40eb9069d 29.54MB / 29.54MB                   1.5s
+ => => extracting sha256:b237fe92c4173e4dfb3ba82e76e5fed4b16186a6161e07af15814cb40eb9069d                          0.6s
+ => [2/5] RUN apt-get update                                                                                       6.1s
+ => ERROR [3/5] RUN apt-get install -y python3                                                                     4.1s
+------
+ > [3/5] RUN apt-get install -y python3:
+0.562 Reading package lists...
+1.330 Building dependency tree...
+1.531 Reading state information...
+1.743 The following additional packages will be installed:
+1.743   libexpat1 libmpdec3 libpython3-stdlib libpython3.10-minimal
+1.743   libpython3.10-stdlib libreadline8 libsqlite3-0 media-types python3-minimal
+1.744   python3.10 python3.10-minimal readline-common
+1.745 Suggested packages:
+1.745   python3-doc python3-tk python3-venv python3.10-venv python3.10-doc binutils
+1.745   binfmt-support readline-doc
+1.797 The following NEW packages will be installed:
+1.797   libexpat1 libmpdec3 libpython3-stdlib libpython3.10-minimal
+1.798   libpython3.10-stdlib libreadline8 libsqlite3-0 media-types python3
+1.798   python3-minimal python3.10 python3.10-minimal readline-common
+1.968 0 upgraded, 13 newly installed, 0 to remove and 2 not upgraded.
+1.968 Need to get 6531 kB of archives.
+1.968 After this operation, 23.5 MB of additional disk space will be used.
+1.968 Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-minimal amd64 3.10.12-1~22.04.2 [811 kB]
+2.511 Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1 amd64 2.4.7-1ubuntu0.2 [91.0 kB]
+2.517 Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-minimal amd64 3.10.12-1~22.04.2 [2258 kB]
+2.675 Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-minimal amd64 3.10.6-1~22.04 [24.3 kB]
+2.676 Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 media-types all 7.0.0 [25.5 kB]
+2.676 Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpdec3 amd64 2.5.1-2build2 [86.8 kB]
+2.677 Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 readline-common all 8.1.2-1 [53.5 kB]
+2.677 Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 libreadline8 amd64 8.1.2-1 [153 kB]
+2.681 Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsqlite3-0 amd64 3.37.2-2ubuntu0.1 [641 kB]
+2.701 Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-stdlib amd64 3.10.12-1~22.04.2 [1849 kB]
+2.865 Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10 amd64 3.10.12-1~22.04.2 [509 kB]
+3.192 Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-stdlib amd64 3.10.6-1~22.04 [6910 B]
+3.352 Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3 amd64 3.10.6-1~22.04 [22.8 kB]
+3.621 debconf: delaying package configuration, since apt-utils is not installed
+3.647 Fetched 6531 kB in 2s (3836 kB/s)
+3.670 Selecting previously unselected package libpython3.10-minimal:amd64.
+(Reading database ... 4395 files and directories currently installed.)
+3.674 Preparing to unpack .../libpython3.10-minimal_3.10.12-1~22.04.2_amd64.deb ...
+3.680 Unpacking libpython3.10-minimal:amd64 (3.10.12-1~22.04.2) ...
+3.755 Selecting previously unselected package libexpat1:amd64.
+3.756 Preparing to unpack .../libexpat1_2.4.7-1ubuntu0.2_amd64.deb ...
+3.763 Unpacking libexpat1:amd64 (2.4.7-1ubuntu0.2) ...
+3.797 Selecting previously unselected package python3.10-minimal.
+3.798 Preparing to unpack .../python3.10-minimal_3.10.12-1~22.04.2_amd64.deb ...
+3.805 Unpacking python3.10-minimal (3.10.12-1~22.04.2) ...
+3.861 Setting up libpython3.10-minimal:amd64 (3.10.12-1~22.04.2) ...
+3.877 Setting up libexpat1:amd64 (2.4.7-1ubuntu0.2) ...
+3.887 Setting up python3.10-minimal (3.10.12-1~22.04.2) ...
+4.000 [Errno 13] Permission denied: '/usr/lib/python3.10/__pycache__/__future__.cpython-310.pyc.139641818520176'dpkg: error processing package python3.10-minimal (--configure):
+4.003  installed python3.10-minimal package post-installation script subprocess returned error exit status 1
+4.010 Errors were encountered while processing:
+4.010  python3.10-minimal
+4.018 E: Sub-process /usr/bin/dpkg returned an error code (1)
+------
+ERROR: failed to solve: executor failed running [/bin/sh -c apt-get install -y python3]: exit code: 100
+root@ubuntu222:/home/d/my_docker#
