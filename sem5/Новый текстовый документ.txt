@@ -1,0 +1,246 @@
+root@ubuntu222:/home/d# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0.31
+docker: Error response from daemon: Conflict. The container name "/some-mysql" is already in use by container "29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu222:/home/d# docker ls
+docker: 'ls' is not a docker command.
+See 'docker --help'
+root@ubuntu222:/home/d# docker --help
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.2)
+  compose*    Docker Compose (Docker Inc., v2.20.2)
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  config      Manage Swarm configs
+  node        Manage Swarm nodes
+  secret      Manage Swarm secrets
+  service     Manage Swarm services
+  stack       Manage Swarm stacks
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+root@ubuntu222:/home/d# docker stats
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   1.21%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   1.21%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.54%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.54%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.47%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.47%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.54%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.54%     431.8MiB / 1.917GiB   22.00%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.50%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.50%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.63%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.63%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+^[
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.63%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+CONTAINER ID   NAME         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O       PIDS
+29a7b74e479c   some-mysql   0.63%     429.8MiB / 1.917GiB   21.90%    7.12kB / 0B   102MB / 274MB   38
+^Z
+[1]+  Остановлен    docker stats
+root@ubuntu222:/home/d# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0.31
+docker: Error response from daemon: Conflict. The container name "/some-mysql" is already in use by container "29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu222:/home/d# docker ps -a
+CONTAINER ID   IMAGE                        COMMAND                  CREATED         STATUS                        PORTS                 NAMES
+29a7b74e479c   mysql:8.0.31                 "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes                  3306/tcp, 33060/tcp   some-mysql
+321fbe68d2ad   wordpress:5.1.1-fpm-alpine   "docker-entrypoint.s…"   2 months ago    Dead                          9000/tcp              wordpress
+93013d6cd22d   mysql:8.0                    "docker-entrypoint.s…"   2 months ago    Exited (255) 10 minutes ago   3306/tcp, 33060/tcp   db
+root@ubuntu222:/home/d# docker rm 93013d6cd22d
+93013d6cd22d
+root@ubuntu222:/home/d# docker ps -a
+CONTAINER ID   IMAGE                        COMMAND                  CREATED         STATUS         PORTS                 NAMES
+29a7b74e479c   mysql:8.0.31                 "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   3306/tcp, 33060/tcp   some-mysql
+321fbe68d2ad   wordpress:5.1.1-fpm-alpine   "docker-entrypoint.s…"   2 months ago    Dead           9000/tcp              wordpress
+root@ubuntu222:/home/d# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0.31
+docker: Error response from daemon: Conflict. The container name "/some-mysql" is already in use by container "29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu222:/home/d# docker rm "29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08".
+Error response from daemon: No such container: 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08.
+root@ubuntu222:/home/d# docker rm 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08
+Error response from daemon: You cannot remove a running container 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08. Stop the container before attempting removal or force remove
+root@ubuntu222:/home/d# docker stop 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08
+Error response from daemon: cannot stop container: 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08: permission denied
+root@ubuntu222:/home/d# docker kill 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08
+Error response from daemon: Cannot kill container: 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08: permission denied
+root@ubuntu222:/home/d#
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+eb43452b1c1c   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   15 seconds ago   Up 13 seconds   0.0.0.0:8081->80/tcp, :::8081->80/tcp   myphp
+29a7b74e479c   mysql:8.0.31            "docker-entrypoint.s…"   20 minutes ago   Up 20 minutes   3306/tcp, 33060/tcp                     some-mysql
+d@ubuntu222:~$ docker images
+REPOSITORY              TAG       IMAGE ID       CREATED        SIZE
+phpmyadmin/phpmyadmin   latest    933569f3a9f6   5 weeks ago    562MB
+mysql                   8.0.31    7484689f290f   8 months ago   538MB
+d@ubuntu222:~$ docker rmi $(docker images -q) --force
+Error response from daemon: conflict: unable to delete 933569f3a9f6 (cannot be forced) - image is being used by running container eb43452b1c1c
+Error response from daemon: conflict: unable to delete 7484689f290f (cannot be forced) - image is being used by running container 29a7b74e479c
+d@ubuntu222:~$ docker rm $(docker ps -aq) --force
+Error response from daemon: Could not kill running container eb43452b1c1ca669fd8d0a3277414821f76115c0ddde32e8e28ccc167918487c, cannot remove - permission denied
+Error response from daemon: Could not kill running container 29a7b74e479cf4b5085094e4e445bf378c10dcdaa0dffccd08d865a81c88eb08, cannot remove - permission denied
+d@ubuntu222:~$ docker rmi $(docker images -q) --force
+Error response from daemon: conflict: unable to delete 933569f3a9f6 (cannot be forced) - image is being used by running container eb43452b1c1c
+Error response from daemon: conflict: unable to delete 7484689f290f (cannot be forced) - image is being used by running container 29a7b74e479c
+d@ubuntu222:~$ client_loop: send disconnect: Connection reset
+PS C:\Users\USER> ssh d@192.168.0.81
+d@192.168.0.81's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+102 обновления может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Включите ESM Apps для получения дополнительных будущих обновлений безопасности.
+Смотрите https://ubuntu.com/esm или выполните: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Sun Aug 27 12:58:01 2023 from 192.168.0.17
+d@ubuntu222:~$ docker rm $(docker ps -aq) --force
+eb43452b1c1c
+29a7b74e479c
+d@ubuntu222:~$ docker rmi $(docker images -q) --force
+Untagged: phpmyadmin/phpmyadmin:latest
+Untagged: phpmyadmin/phpmyadmin@sha256:67ba2550fd004399ab0b95b64021a88ea544011e566a9a1995180a3decb6410d
+Deleted: sha256:933569f3a9f631d1867bc512beedf6d6fa25a5b3a2b2638d59fe2d6f18002db9
+Deleted: sha256:c062055a88d0ea3518803dad689de0fd1c4d0086e69468539775c648d84bf7fe
+Deleted: sha256:870f0d68a84119de6dc57a04bd3132f43b124abf818ba2a17fa66b41c3dc092f
+Deleted: sha256:61dc853717e0501da0b9c65f11ae6e127f1ca210762c3082d345057f95253965
+Deleted: sha256:5424c4cef91d2d09dcff6b97bfad52989c678f24004e7590ed132ba06ae55f33
+Deleted: sha256:75e4f26595fc2534d25bbf78883def4bdec63a3c149c170cf5dd065d55be532e
+Deleted: sha256:7ec99bb6c6b4a5175023c7ae70e5db97ef7ed898508c1d7e98fe2418db7bb98e
+Deleted: sha256:7926251c2e2e130aa77881944cb31fbb37eddf866cc5fa96e5f47377ca287883
+Deleted: sha256:1580eb456d79472e774e05a83caa4f0d317218412586415cdc7602460cfca8d7
+Deleted: sha256:467630ccf847f6858149fbe7b6d0b7fa17ae0586a02f6cdfec4dddc9e975175c
+Deleted: sha256:08710bc0f123cdae237fde29e6186bedc6bcc277b11cd5d7dad0d9b6a3efb770
+Deleted: sha256:fab16324ce2cbd32748fefcc9b4c6c2d39fc84ec1ee53b9b3f197a9d5dbe223c
+Deleted: sha256:ba5a9b206a46895d688ae2627889243519232776a6e68d2f2d2c0ef774ad63bc
+Deleted: sha256:e716f1303e515b9965493c2e76c4e0d5a7d448499f72d83f3e8a1a839e865044
+Deleted: sha256:7c960c6887bb7153723878976acc63aaf0e78c93994769397adc56df0379f7be
+Deleted: sha256:758105a8a221456937e20d794c72e88461a6a89eb42f9b1346337fcdc274ca9c
+Deleted: sha256:c9e443ef1d4319e2aa87ca7875be15c2f601290770936f1fee419d909970d8f9
+Deleted: sha256:4219c066cd8854aceb2eb63a5f76f86a9a815a9cbca7bb288fd9d9fd5e520ef1
+Deleted: sha256:24839d45ca455f36659219281e0f2304520b92347eb536ad5cc7b4dbb8163588
+Untagged: mysql:8.0.31
+Untagged: mysql@sha256:3d7ae561cf6095f6aca8eb7830e1d14734227b1fb4748092f2be2cfbccf7d614
+Deleted: sha256:7484689f290f1defe06b65befc54cb6ad91a667cf0af59a265ffe76c46bd0478
+Deleted: sha256:fb249074ba1621ae2f0021b89488f93d6d591fd42f8bbc760be96a653d18a066
+Deleted: sha256:d7912527c048a7e206c51080f7f1b6b6c383ac8954e3da7d113b00d0a96c7044
+Deleted: sha256:994f05094d147f16e330dd7c9afd5e1472fbf1ce1038eb707e379ae507de6167
+Deleted: sha256:1337fe7eaf3ed7bac1f1842205c3c80466781cf2ed39d755043a24939a9c4408
+Deleted: sha256:4524762c7e21412b3fef00e189fe6b81e78f2751fef4f30355018dc3ab5f3cf2
+Deleted: sha256:5222c8df3c5115dcf6c3bb957d5160d5d7124437fa2f214368d67b8e1e6d670e
+Deleted: sha256:169fcf64e0d193fda3e49267b454ddeb4083f05e70bbcbbc6de2798944c3e555
+Deleted: sha256:bc87451b8005b06fa948e48c2644bc42107cf037499d15dad7f341064035dfc2
+Deleted: sha256:93c1acbf3bfcdd2a82a68687481569a07d619469a596b5f017f17cc092498eef
+Deleted: sha256:29bd3d7c6e1683e422776b9d3285e8a3f1272f07656fc63a941cb7729a169100
+Deleted: sha256:d3cc7b6aa7bc15725c1a856ce06fe436da3fbccf0c9c06b04e45f79b3439c154
+d@ubuntu222:~$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+d@ubuntu222:~$ docker-compose up -d
+ERROR:
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml
+
+d@ubuntu222:~$ ^C
+d@ubuntu222:~$  nano docker-compose.yml
